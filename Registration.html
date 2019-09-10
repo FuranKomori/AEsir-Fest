@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Get your FEST ticket</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles/customization.css">
+
+</head>
+
+<body id="reg-body">
+
+        
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="spinner-grow text-muted" href="index.html">Menu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                        <li class="nav-item">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Main.html" data-toggle="tooltip"  data-placement="top" title="AESIR-FEST" style="color: rgb(255, 255, 255)">Æsir</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Paff.html" data-toggle="tooltip" data-placement="top" title="PAFF" style="color: rgb(255, 255, 255)">PAFF</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Neko.html" data-toggle="tooltip" data-placement="top" title="NEKO" style="color: rgb(255, 255, 255)">Neko</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="ROBO_Head.html" data-toggle="tooltip" data-placement="top" title="ROBO_Head" style="color: rgb(255, 255, 255)">ROBO_Head</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Cherry.html" data-toggle="tooltip" data-placement="top" title="Cherry" style="color: rgb(255, 255, 255)">Cherry</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Registration.html" data-toggle="tooltip"  data-placement="top" title="registration" style="color: rgb(255, 255, 255)">Registration</a>
+                                </li>
+                    </ul>
+
+                </div>
+                <!--Division campo login usuarios inicio.-->
+                <div class="login-container">
+                    <form action="/action_page.php">
+                        <!-- <input type="text" placeholder="Username" name="username">
+                        <input type="password" placeholder="Password" name="psw">
+                        <button type="submit" class="btn btn-primary btn-sm">Login</button>
+                        -->
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"> Reservation </button>
+        
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+        
+                                    <!-- Modal Header -->
+                                    <div class="modal-header" style="background-color:black">
+                                        <h4 class="modal-title" style="color: whitesmoke"><strong>Ticket Reservation</strong></h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+        
+                                    <!-- Modal body -->
+                                    <div id="modalBody" class="modal-body" style="background-image: url(img/AEsir_FEST1.jpg)" style="background-color: black">
+                                        <form action="/action_page.php" class="was-validated">
+                                            <div class="form-group">
+                                                <label for="uname" style="color: whitesmoke">Username:</label>
+                                                <input type="text" class="form-control" style="background: transparent" id="uname" placeholder="Enter username" name="uname" required>
+                                                <div class="valid-feedback" style="color: whitesmoke">Valid.</div>
+                                                <div class="invalid-feedback" style="color: whitesmoke">Please fill out this field.</div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="pwd" style="color: whitesmoke">Password:</label>
+                                                <input type="password" class="form-control" style="background: transparent" id="pwd" placeholder="Enter password" name="pswd" required>
+                                                <div class="valid-feedback" style="color: whitesmoke">Valid.</div>
+                                                <div class="invalid-feedback" style="color: whitesmoke">Please fill out this field.</div>
+                                            </div>
+                                            <div class="form-group form-check">
+                                                <label class="form-check-label">
+                  <input class="form-check-input"  style="color: whitesmoke" type="checkbox" name="remember" required > <p style="color: whitesmoke">I accept the terms and conditions.</p>
+                  <div class="valid-feedback" style="color: whitesmoke"></div>
+                  <div class="invalid-feedback"style="color: whitesmoke">Accept the terms and conditions.</div>
+                </label>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                        </form>
+                                    </div>
+        
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer" style="background-color:black">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                    </div>
+        
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </nav>
+            <header>
+              
+                    <div class="modal-header">
+                    <img src="img/AESIR1.png" alt="AEsir1" width="100%"></br>
+                    </div>
+                  </header>    
+        
+
+    <div  class="row" style="margin-right:0px">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <div class="container">
+                <form class="form-horizontal" role="form">
+
+                    <h2 style="color: white">Registration form</h2>
+
+                    <div class="form-group">
+                        <label for="firstName" class="col-sm-9 control-label">First Name</label>
+                        <div class="col-sm-9">  
+                            <input type="text" id="firstName" placeholder="firstname" class="form-control" autofocus>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName" class="col-sm-9 control-label">Last Name</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="lastName" placeholder="lastname" class="form-control" autofocus>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="col-sm-9 control-label">Email* </label>
+                        <div class="col-sm-9">
+                            <input type="email" id="email" placeholder="Email" class="form-control" name="email" required>
+                            <div class="valid-feedback" style="color: whitesmoke">Valid.</div>
+                                        <div class="invalid-feedback" style="color: whitesmoke">This field must be filled.</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="firstName" class="col-sm-9 control-label">HandleName</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="firstName" placeholder="Usuario Ingame" class="form-control" name="usuarioingame"required>
+                            <div class="valid-feedback" style="color: whitesmoke">Valid.</div>
+                                        <div class="invalid-feedback" style="color: whitesmoke">This field must be filled.</div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="password" class="col-sm-9 control-label">Password</label>
+                            <div class="col-sm-9">
+                                <input type="password" id="password" data-toggle="tooltip" data-placement="top" title="*La contraseña solicitada dentro del formulario es para el inicio de sesion dentro de la comunidad, no de tu usuario dentro de PUBG LITE*" placeholder="Contraseña"
+                                    class="form-control" name="contraseña" required>
+                            </div>
+                            <div class="valid-feedback" style="color: whitesmoke">Valid.</div>
+                                        <div class="invalid-feedback" style="color: whitesmoke">This field must be filled.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="col-sm-9 control-label">Repeat password*</label>
+                            <div class="col-sm-9">
+                                <input type="password" id="password" placeholder="Contraseña" class="form-control" name="confirmacontraseña" required>
+                            </div>
+                            <div class="valid-feedback" style="color: whitesmoke"> Valid.</div>
+                                        <div class="invalid-feedback" style="color: whitesmoke">This field must be filled.</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="birthDate" class="col-sm-9 control-label">Birthdate*</label>
+                            <div class="col-sm-9">
+                                <input type="date" id="birthDate" class="form-control" required>
+                                <div class="valid-feedback" style="color: whitesmoke"></div>
+                                <div class="invalid-feedback" style="color: whitesmoke">This field must be filled.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.form-group -->
+                    <div class="form-group">
+                        <div class="col-sm-9 col-sm-offset-3">
+                            <span class="help-block" style="color: white">*Required fields</span>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Submit your reservation.</button>
+                </form>
+                <!-- /form -->
+            </div>
+            <!-- ./container -->
+        </div></br>
+
+
+</body>
+
+    <footer class="footer fixed-bottom" style="position:static" >
+      <p>Links</p>
+      <div class="col-sm 4">
+          <a href="https://www.facebook.com/rayark.cytus/" data-toggle="tooltip" data-placement="top" title="Official Cytus Page"> <img class="rounded-circle" src="img/Cytus2.png" width="80px" heigth="80px"></a>
+
+          <a href="https://www.rayark.com/g/cytus2/" data-toggle="tooltip" data-placement="top" title="Facebook"> <img class="rounded-circle" src="img/CyTus.jpg" width="80px" heigth="80px"></a>
+
+          <a href="https://www.facebook.com/rayark.cytus/" data-toggle="tooltip" data-placement="top" title="Twitter"> <img class="rounded-circle" src="img/CyTus3.webp" width="80px" heigth="80px"></a>
+      </div>
+      <div>
+
+      </div>
+    </footer>
+</html>
